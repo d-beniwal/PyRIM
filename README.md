@@ -30,17 +30,22 @@ python radial_integration.py -data test_data.npy -ps_filepath test_ps.txt
 
 If you need radial integration as part of your bigger workflow, consider using the 'do_radial_integration' function in the 'radial_integration.py' file.
 
-Required Arguments
-Argument	Description
--data	Path to the input image file (TIFF, HDF5, or NPY format)
--ps_filepath	Path to the MIDAS parameters text file
-Optional Arguments
-Argument	Type	Default	Description
--output_dir	string	"out"	Output directory for results
--dR	float	0.5	Radial bin size in pixels
--dE	float	5	Azimuthal bin size in degrees
--h5datacontainer	string	"None"	HDF5 dataset name (required for HDF5 files)
--plot_results	string	"yes"	Show plots ("yes"/"no")
+## Required Arguments
+
+| Argument | Description |
+|----------|-------------|
+| `-data` | Path to the input image file (TIFF, HDF5, or NPY format) |
+| `-ps_filepath` | Path to the MIDAS parameters text file |
+
+## Optional Arguments
+
+| Argument | Type | Default | Description |
+|----------|------|---------|-------------|
+| `-output_dir` | string | `"out"` | Output directory for results |
+| `-dR` | float | `0.5` | Radial bin size in pixels |
+| `-dE` | float | `5` | Azimuthal bin size in degrees |
+| `-h5datacontainer` | string | `"None"` | HDF5 dataset name (required for HDF5 files) |
+| `-plot_results` | string | `"yes"` | Show plots ("yes"/"no") |
 
 
 # Detector geometry
