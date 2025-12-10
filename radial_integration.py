@@ -190,7 +190,7 @@ def do_radial_integration(data, ps_filepath, dR=0.5, dE=5, h5datacontainer="None
 
     Returns:
         radial_lineout (np.ndarray): 1D array with integrated intensity values as a function of radial distance;\
-            azimuthal bins are compressed into one
+            For each radial bin, all azimuthal bins within it are compressed
         RE_bin_intensity (np.ndarray): 2D array with integrated intensity values. Row index is radial bin, column index is azimuthal bin
         R_bin_centers (np.ndarray): array of radial bin centers
         E_bin_centers (np.ndarray): array of azimuthal bin centers
