@@ -44,7 +44,7 @@ If you need radial integration as part of your bigger workflow, consider using t
 | `-output_dir` | string | `"out"` | Output directory for results |
 | `-dR` | float | `0.5` | Radial bin size in pixels |
 | `-dE` | float | `5` | Azimuthal bin size in degrees |
-| `-h5datacontainer` | string | `"None"` | HDF5 dataset name (required for HDF5 files) |
+| `-h5datacontainer` | string | `"None"` | HDF5 dataset name (required for HDF5 files): path to data variable within hdf5 |
 | `-plot_results` | string | `"yes"` | Show plots ("yes"/"no") |
 
 
