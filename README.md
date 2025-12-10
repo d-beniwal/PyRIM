@@ -16,7 +16,7 @@ A Python tool for performing radial integration of 2D X-ray diffraction patterns
 
 The current implementation does not handle overlap of multiple bins on a pixel. In the MIDAS C/C++ code, this is handled through polygon intersection and shoelace area calculations.
 
-### Requirements
+## Requirements
 
 ```bash
 pip install numpy matplotlib imageio h5py
