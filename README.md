@@ -48,24 +48,23 @@ If you need radial integration as part of your bigger workflow, consider using t
 | `-plot_results` | string | `"yes"` | Show plots ("yes"/"no") |
 
 
-# Detector geometry
-px 50.0                    # Pixel size in microns
-BC 1024.5 1024.5         # Beam center coordinates (Y, Z)
-Lsd 0.5                   # Sample-to-detector distance in meters
+# The MIDAS parameter file used as an input must have the following parameters defined in it
 
-# Detector rotations (degrees)
-tx 0.0                    # Rotation about X-axis
-ty 0.0                    # Rotation about Y-axis  
-tz 0.0                    # Rotation about Z-axis
+## Detector Geometry
 
-# Distortion parameters
-p0 0.0                    # 2-fold angular distortion
-p1 0.0                    # 4-fold angular distortion
-p2 0.0                    # Radial distortion
-p3 0.0                    # 4-fold angular phase
-
-# Detector size
-NrPixels 2048            # Number of pixels (square detector)
-# OR
-NrPixelsY 2048           # Horizontal pixels
-NrPixelsZ 2048           # Vertical pixels
+| Parameter | Value | Description |
+|-----------|-------|-------------|
+| `px` | `200.0` | Pixel size in microns |
+| `BC` | `1024.5 1024.5` | Beam center pixel coordinates (Y, Z) |
+| `Lsd` | `820000` | Sample-to-detector distance in microns |
+| `tx` | `0.124` | Rotation about X-axis (degrees) |
+| `ty` | `-0.321` | Rotation about Y-axis (degrees) |
+| `tz` | `0.021` | Rotation about Z-axis (degrees)|
+| `p0` | `6.357880806e-06` | Distortion parameter for 2-fold angular distortion term |
+| `p1` | `6.210839248e-05` | Distortion parameter for 4-fold angular distortion term |
+| `p2` | `-0.00074891983` | Distortion parameter for radial distortion term |
+| `p3` | `150.0` | Distortion parameter for 4-fold angular distortion term |
+| `NrPixels` | `2048` | Number of pixels (square detector) |
+| **OR** | | |
+| `NrPixelsY` | `1650` | Horizontal pixels |
+| `NrPixelsZ` | `1460` | Vertical pixels |
